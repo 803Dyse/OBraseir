@@ -6,8 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>O Braseiro</title>
+    <link rel="stylesheet" href="../css/formularioStyle.css">
+    <link rel="stylesheet" href="../css/informacionStyle.css">
     <link rel="stylesheet" href="../css/GlobalStyle.css">
-    <link rel="shortcut icon" href="img/Fogo_blur.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/EstiloBotones.css">
+
+    <link rel="shortcut icon" href="../img/Fogo_blur.ico" type="image/x-icon">
 </head>
 
 <body>
@@ -22,7 +26,7 @@
                     <a href="../Index.html"><button class="botonesIndice">Volver a inicio</button></a>
                     <a href="../PaginasWeb/Informacion.html"><button class="botonesIndice">Información</button></a>
                     <a href="../PaginasWeb/QuienesSomos.html"><button class="botonesIndice">Quienes Somos</button></a>
-                    <a href="../Index.html"><button class="botonesIndice"> Contacto</button> </a>
+                    <a href="https://www.instagram.com/obraseiroponteareas/"><button class="botonesIndice"> Contacto</button> </a>
                 </nav>
 
             </header>
@@ -32,23 +36,66 @@
         <!--Esto ya es la parte principal del cuerpo de la pagina web, con mas contenido y información.-->
         <div class="main">
             <main>
-                <div class="bloque1">
-                    <section>
-                       
-                        <article id="article1">
-                          
-                        </article>
-                    </section>
-                </div>
+
+                <div class="bloquePrincipal">
+                    <div class="InformacionImportante">
+                        <section>
+                            <h1>Información de contacto</h1>
+                            <h3>Numero de telefono:</h3>
+                            <h3>986 95 80 03</h3>
+                            <h3>983 72 54 91</h3>
+                            <h3>obraseiro.es@gmail.com</h3>
+                        </section>
+                    </div>
+
+                    <div class="formContainer">
+                        <form class="row g-3">
+                            <div class="controlGeneralForm">
+                                <div class="col-4">
+                                    <label for="nameInput" class="form-label">Nombre*</label>
+                                    <input type="text" class="form-control" id="nameInput" required>
+                                </div>
+                                <div class="col-4">
+                                    <label for="surnameInput" class="form-label">Apellido 1*</label>
+                                    <input type="text" class="form-control" id="surnameInput" required>
+                                </div>
+                                <div class="col-4">
+                                    <label for="surname2Input" class="form-label">Apellido 2*</label>
+                                    <input type="text" class="form-control" id="surname2Input" required>
+                                </div>
+                                <div class="col-6">
+                                    <label for="addressInput" class="form-label">Dirección</label>
+                                    <input type="text" class="form-control" id="addressInput">
+                                </div>
+                                <div class="col-6">
+                                    <label for="phoneInput" class="form-label">Número de Teléfono</label>
+                                    <input type="tel" class="form-control" id="phoneInput" pattern="[0-9]" maxlength="9">
+                                </div>
+                                <div class="col-4">
+                                    <label for="emailInput" class="form-label">Correo*</label>
+                                    <input type="email" class="form-control" id="emailInput"
+                                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+                                </div>
+                                <div class="col-4">
+                                    <label for="favoriteColorInput" class="form-label">Color Favorito</label>
+                                    <input type="text" class="form-control" id="favoriteColorInput">
+                                </div>
+                                <div class="col-4">
+                                    <label for="birthdateInput" class="form-label">Fecha de Nacimiento</label>
+                                    <input type="date" class="form-control" id="birthdateInput">
+                                </div>
+                                <div class="col-12">
+                                    <label for="ratingInput" class="form-label">Valoración*</label>
+                                    <input type="text" class="form-control" id="ratingInput" required>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" id="sendButton" class="btn btn-success btn-lg">Enviar</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
 
 
-                <div class="bloque2">
-                    <section>
-                       
-                    </section>
-                    <aside>
-                        
-                    </aside>
                 </div>
 
             </main>
@@ -66,6 +113,7 @@
         </div>
         <!--Aqui se acaba el pié de la página.-->
     </div>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 
 </html>
